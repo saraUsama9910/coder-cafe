@@ -1,31 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* custom styles */
-body {
-  font-family: 'Sriracha', cursive;
-  background-color: #f0f4f8;
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@layer utilities {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.spin {
-  animation: spin 40s linear infinite;
-}
 
-/* smooth scrolling */
-html {
-  scroll-behavior: smooth;
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 15px #3030307a);
+  }
+
+  .input-style {
+    @apply px-4 py-2 border-[1px] border-gray-400 rounded-md;
+  }
+
+  .primary-btn {
+    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200;
+  }
 }

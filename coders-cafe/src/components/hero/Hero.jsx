@@ -1,5 +1,6 @@
 import React from "react";
 import BgImage from "../../assets/bg-slate.png";
+import BlackCoffee from "../../assets/black.png";
 console.log(BgImage);
 const bgImage={
     backgroundImage:`url(${BgImage})`,
@@ -45,7 +46,10 @@ const Hero = () => {
    </div>
 </div>
 {/*hero Image section*/}
-<div></div>
+<div  className="relative">
+    <img src={BlackCoffee} alt="" className="relative z-40 h-[400px] md:h-[700px] img-shadow"/>
+</div>
+
 
 {/*third div section */}
 <div></div>
