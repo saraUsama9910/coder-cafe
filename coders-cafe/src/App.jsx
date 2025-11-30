@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./components/hero/Hero";
 const App = () => {
-  return <div >Welcome to Coders Cafe!
+  return <div >
     <nav className="overflow-x-hidden">
       <Hero/>
 
