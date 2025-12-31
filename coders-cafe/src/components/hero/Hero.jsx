@@ -97,33 +97,22 @@ const Hero = () => {
   border-orange-300/90 rounded-full z-20 border-[20px]"
                             />
 
-                            <div
-                                className="
-    absolute
-    top-10
-    right-0
-    md:right-20
-    lg:right-40
-    xl:right-64
-    z-[1]
-    pointer-events-none
-    select-none
-  "
-                            >
-                                <h1
-                                    className="
-      text-[24px]
-      md:text-[32px]
-      lg:text-[40px]
-      scale-150
-      font-bold
-      text-black/20
-      leading-none
-    "
-                                >
-                                    Black Tumbler
-                                </h1>
-                            </div>
+<motion.div 
+                                initial={{ opacity: 0, x: -100 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 100,
+                                    damping: 10,
+                                    delay: .8,
+                                }}
+
+
+className="absolute top-20 left-[200px] z-[1]">
+    <h1 className="text-[100px] scale-150  font-bold text-black/20 leading-none">
+        Black Tumbler
+    </h1>
+</motion.div>
 
 
 </div>
