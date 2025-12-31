@@ -1,5 +1,5 @@
 import React from 'react'
-
+import{motion} from "framer-motion"
 const Services = () => {
   return (
     <div className="container my-16
@@ -7,12 +7,14 @@ const Services = () => {
         {/* header section  */}
 <div className='text-center max-w-lg mx-auto
 space-y-2'>
-<h1 className='text-3xl font-bold text-Gray-600/200'>
+<motion.h1 
+
+className='text-3xl font-bold text-Gray-600/200'>
     Fresh and <span className='text-yellow-500'>
        Tasty Coffees
     </span>
-</h1>
-<p className='text-sm opacity-50'>
+</motion.h1>
+<motion.p className='text-sm opacity-50'>
 Lorem,ipsum dolor sit amet
 consectetur adipisicing elit.
 Eos 
@@ -20,7 +22,7 @@ reprehenderit eum ducimus,
 distinctio cum eaque totam
 voluptatem ex
 dolorem fuga.
-</p>
+</motion.p>
 
 </div>
 
