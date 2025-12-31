@@ -2,7 +2,7 @@ import React from "react";
 import BgImage from "../../assets/bg-slate.png";
 import BlackCoffee from "../../assets/black.png";
 import Navbar from "../Navbar/Navbar";
-
+import {motion} from 'framer-motion';
 console.log(BgImage);
 const bgImage={
     backgroundImage:`url(${BgImage})`,
@@ -22,11 +22,20 @@ const Hero = () => {
             lg:grid-cols-3 place-items-center
             min-h-[800px]">
 {/*text content section */}
-                        <div className="text-orange-200/100 mt-[100px]"> 
-   < h1 className="text-7xl font-bold leading-tight ml-14
+    <div className="text-orange-200/100 mt-[100px]"> 
+   < motion.h1 
+   initial={{opacity: 0,y: -100}} 
+   animate={{opacity: 1,y: 0}}
+   transition={{
+    type: 'spring',
+    stiffness: 100,
+    damping: 10,
+    delay: 0.4,
+   }}
+   className="text-7xl font-bold leading-tight ml-14
    md:mt-0 p-4 space-y-28">
    Black Tumbler
-   </h1>
+   </motion.h1>
    <div className="relative mt-10"> 
     <div className="relative z-10 space-y-4  ml-14">
        <h1 className="text-2xl">
