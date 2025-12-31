@@ -23,8 +23,8 @@ className='text-3xl font-bold text-Gray-600/200'>
 </motion.h1>
 <motion.p 
 
-initial={{ opacity: 0, y: 100 }}
-whileInView={{ opacity: 1, y: 0 }}
+initial={{ opacity: 0, scale:0.5 }}
+whileInView={{ opacity: 1, scale:1 }}
 transition={{
     type: "spring",
     stiffness: 150,
