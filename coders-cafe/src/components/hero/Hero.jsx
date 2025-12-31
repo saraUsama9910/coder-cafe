@@ -172,30 +172,32 @@ to-orange-500/100 backdrop-blur-sm z-10">
    <div className="w-full h-full
    flex justify-center items-center">
                             <div className="
+flex flex-col justify-center items-center
     gap-6 text-white ">
+{/*line */}
 
-                                <div className="w-[1px] h[70px] bg-white">
+    <div className="w-[1px] h-[70px] bg-white">
 
-                                </div>
-                                {/*circle social icons*/}
-                                <div className="inline-block p-2 rounded-full 
+    </div>
+    {/*circle social icons*/}
+    <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-                                    <FaFacebookF className="text-2xl" />
-                                </div>
-                                <div className="inline-block p-2 rounded-full 
+        <FaFacebookF className="text-2xl" />
+    </div>
+    <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-                                    <FaTwitter className="text-2xl" />
-                                </div>
-                                <div className="inline-block p-2 rounded-full 
+        <FaTwitter className="text-2xl" />
+    </div>
+    <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-                                    <FaInstagram className="text-2xl" />
-                                </div>
-                                {/*line */}
+        <FaInstagram className="text-2xl" />
+    </div>
+    {/*line */}
 
-                                <div className="w-[1px] h[70px] bg-white">
+    <div className="w-[1px] h-[70px] bg-white">
 
-                                </div>
-                            </div>
+    </div>
+</div>
    </div>
     
 </div>
