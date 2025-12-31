@@ -30,13 +30,23 @@ const Hero = () => {
     type: 'spring',
     stiffness: 100,
     damping: 10,
-    delay: 0.4,
+    delay: 1,
    }}
    className="text-7xl font-bold leading-tight ml-14
    md:mt-0 p-4 space-y-28">
    Black Tumbler
    </motion.h1>
-   <div className="relative mt-10"> 
+   <motion.div 
+    initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
+        delay: 1.2,
+    }}
+   
+   className="relative mt-10"> 
     <div className="relative z-10 space-y-4  ml-14">
        <h1 className="text-2xl">
         Black Lifestyle
@@ -56,7 +66,7 @@ const Hero = () => {
 
 
     </div>
-   </div>
+   </motion.div>
 </div>
 {/*hero Image section*/}
 <div  className="relative">
