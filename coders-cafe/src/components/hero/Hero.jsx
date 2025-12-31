@@ -13,7 +13,7 @@ const bgImage={
 const Hero = () => {
     return (
 <main style={bgImage}>
-    <section className="min-h-[800px] w-full">
+    <section className=" relative min-h-[800px] w-full">
         <div className="container">
             {/*navbar section*/}
 <Navbar/>                
@@ -161,6 +161,16 @@ className="absolute top-20 left-[200px] z-[1]">
 
             </div>
         </div>
+
+{/*sidebar menu section*/}
+
+<div>
+    <div>
+
+        
+    </div>
+</div>
+
     </section>
 </main>
     );
