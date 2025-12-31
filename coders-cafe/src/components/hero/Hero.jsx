@@ -12,6 +12,7 @@ const bgImage={
         backgroundRepeat:"no-repeat"
 }
 const Hero = () => {
+    const {sidebar, setSidebar} = React.useState(false);
     return (
 <main style={bgImage}>
     <section className=" relative min-h-[800px] w-full">
