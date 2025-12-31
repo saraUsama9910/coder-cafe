@@ -1,5 +1,11 @@
 import React from 'react'
 import{motion} from "framer-motion"
+import Coffee1 from "../../assets/coffee/coffee1.png"
+import Coffee2 from "../../assets/coffee/coffee1.png"
+import Coffee3 from "../../assets/coffee/coffee3.png"
+
+
+
 const servicesData=[
     {
         id:1,
@@ -68,7 +74,17 @@ dolorem fuga.
 
           {/* card section  */}
 
+<div>
 
+{servicesData.map((service)=>
+(
+<div>
+    <img src={service.image} />
+    </div>
+
+))}
+
+</div>
 
     </div>
   )
