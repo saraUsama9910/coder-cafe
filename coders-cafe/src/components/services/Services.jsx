@@ -1,5 +1,25 @@
 import React from 'react'
 import{motion} from "framer-motion"
+const servicesData=[
+    {
+        id:1,
+        image:Coffee1,
+        title:"Black Coffee",
+        subtitle:"lorem ipsum dolor sit iAmethyst, consectuter adipiscing elit."
+},
+    {
+        id: 2,
+        image: Coffee2,
+        title: "Hot Coffee",
+        subtitle: "lorem ipsum dolor sit iAmethyst, consectuter adipiscing elit."
+    },
+    {
+        id: 3,
+        image: Coffee3,
+        title: "Cold Coffee",
+        subtitle: "lorem ipsum dolor sit iAmethyst, consectuter adipiscing elit."
+    },
+]
 const Services = () => {
   return (
     <div className="container my-16
