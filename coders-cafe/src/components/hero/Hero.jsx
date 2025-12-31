@@ -3,6 +3,7 @@ import BgImage from "../../assets/bg-slate.png";
 import BlackCoffee from "../../assets/black.png";
 import Navbar from "../Navbar/Navbar";
 import {motion, scale} from 'framer-motion';
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 console.log(BgImage);
 const bgImage={
     backgroundImage:`url(${BgImage})`,
@@ -164,10 +165,23 @@ className="absolute top-20 left-[200px] z-[1]">
 
 {/*sidebar menu section*/}
 
-<div>
-    <div>
+<div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
+to-orange-500/100 backdrop-blur-sm z-10">
+    <div className="w-full h-full flex justify-center items-center
+    gap-6 ">
 
-        
+<div className="w-[1px] h[70px] bg-white">
+
+</div>
+{/*circle social icons*/}
+<FaFacebookF/>
+<FaTwitter/>
+<FaInstagram/>
+                        {/*line */}
+
+<div className="w-[1px] h[70px] bg-white">
+
+</div>
     </div>
 </div>
 
