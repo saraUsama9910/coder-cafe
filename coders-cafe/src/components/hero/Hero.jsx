@@ -174,10 +174,16 @@ to-orange-500/100 backdrop-blur-sm z-10">
 
 </div>
 {/*circle social icons*/}
-<FaFacebookF/>
-<FaTwitter/>
-<FaInstagram/>
-                        {/*line */}
+<div>
+ <FaFacebookF />
+</div>
+<div>
+<FaTwitter />
+</div>
+<div>
+<FaInstagram />
+</div>
+{/*line */}
 
 <div className="w-[1px] h[70px] bg-white">
 
