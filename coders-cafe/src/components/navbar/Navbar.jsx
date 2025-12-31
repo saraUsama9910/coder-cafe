@@ -4,7 +4,7 @@ import{ motion } from 'framer-motion'
 const Navbar = () => {
   return (
     <nav className='absolute top-0 left-0 w-full pt-10
-    text-white z-20'>
+    text-white z-40'>
         <div className='container '>
 <div>
     <div className='flex justify-between items-center'>
@@ -29,9 +29,19 @@ const Navbar = () => {
         </motion.h1>
 
 {/*hamburger section*/}
-<div>
+<motion.div
+initial={{ opacity: 0, y: -100 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{
+    type: "spring",
+    stiffness: 100,
+    damping: 10,
+    delay: .2,
+}}
+
+>
     <GiHamburgerMenu className='text-3xl cursor-pointer'/>
-        </div>
+        </motion.div>
 </div>
 </div>
 
