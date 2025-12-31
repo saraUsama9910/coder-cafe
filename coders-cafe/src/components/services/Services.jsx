@@ -12,6 +12,15 @@ space-y-2'>
        Tasty Coffees
     </span>
 </h1>
+<p className='text-sm opacity-50'>
+Lorem,ipsum dolor sit amet
+consectetur adipisicing elit.
+Eos 
+reprehenderit eum ducimus,
+distinctio cum eaque totam
+voluptatem ex
+dolorem fuga.
+</p>
 
 </div>
 
