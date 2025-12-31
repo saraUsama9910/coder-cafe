@@ -170,7 +170,16 @@ className="absolute top-20 left-[200px] z-[1]">
 {/*sidebar menu section*/}
 {sidebar && (
 
-                    <div>
+                    <motion.div 
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 100,
+                        damping: 10,
+                        delay: 0,
+                    }}>
+                        
                         <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
 to-orange-500/100 backdrop-blur-sm z-10">
 
@@ -209,7 +218,7 @@ border border-white cursor-pointer">
                         </div>
 
 
-                    </div>
+                    </motion.div>
 
 )}
 
