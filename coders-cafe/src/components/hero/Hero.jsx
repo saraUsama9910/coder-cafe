@@ -1,6 +1,7 @@
 import React from "react";
 import BgImage from "../../assets/bg-slate.png";
 import BlackCoffee from "../../assets/black.png";
+
 console.log(BgImage);
 const bgImage={
     backgroundImage:`url(${BgImage})`,
