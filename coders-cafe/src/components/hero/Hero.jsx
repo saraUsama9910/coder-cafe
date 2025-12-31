@@ -18,7 +18,10 @@ const Hero = () => {
     <section className=" relative min-h-[800px] w-full">
         <div className="container">
             {/*navbar section*/}
-<Navbar/>                
+<Navbar
+ sidebar={sidebar} 
+ setSidebar={setSidebar} 
+ />                
             {/*hero section*/}
             <div className="grid grid-cols-1 md:grid-cols-2
             lg:grid-cols-3 place-items-center
@@ -165,46 +168,51 @@ className="absolute top-20 left-[200px] z-[1]">
         </div>
 
 {/*sidebar menu section*/}
-<div>
-<div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
+sidebar && (
+
+
+                <div>
+                    <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
 to-orange-500/100 backdrop-blur-sm z-10">
-   
-   
-   <div className="w-full h-full
+
+
+                        <div className="w-full h-full
    flex justify-center items-center">
                             <div className="
 flex flex-col justify-center items-center
     gap-6 text-white ">
-{/*line */}
+                                {/*line */}
 
-    <div className="w-[1px] h-[70px] bg-white">
+                                <div className="w-[1px] h-[70px] bg-white">
 
-    </div>
-    {/*circle social icons*/}
-    <div className="inline-block p-2 rounded-full 
+                                </div>
+                                {/*circle social icons*/}
+                                <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-        <FaFacebookF className="text-2xl" />
-    </div>
-    <div className="inline-block p-2 rounded-full 
+                                    <FaFacebookF className="text-2xl" />
+                                </div>
+                                <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-        <FaTwitter className="text-2xl" />
-    </div>
-    <div className="inline-block p-2 rounded-full 
+                                    <FaTwitter className="text-2xl" />
+                                </div>
+                                <div className="inline-block p-2 rounded-full 
 border border-white cursor-pointer">
-        <FaInstagram className="text-2xl" />
-    </div>
-    {/*line */}
+                                    <FaInstagram className="text-2xl" />
+                                </div>
+                                {/*line */}
 
-    <div className="w-[1px] h-[70px] bg-white">
+                                <div className="w-[1px] h-[70px] bg-white">
 
-    </div>
-</div>
-   </div>
-    
-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
 
-</div>
+                </div>
+
+)
 
     </section>
 </main>
