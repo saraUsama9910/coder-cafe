@@ -168,20 +168,23 @@ className="absolute top-20 left-[200px] z-[1]">
 <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
 to-orange-500/100 backdrop-blur-sm z-10">
     <div className="w-full h-full flex justify-center items-center
-    gap-6 ">
+    gap-6 text-white ">
 
 <div className="w-[1px] h[70px] bg-white">
 
 </div>
 {/*circle social icons*/}
-<div>
- <FaFacebookF />
+<div className="inline-block p-2 rounded-full 
+border border-white cursor-pointer">
+ <FaFacebookF className="text-2xl" />
 </div>
-<div>
-<FaTwitter />
+<div className="inline-block p-2 rounded-full 
+border border-white cursor-pointer">
+ <FaTwitter className="text-2xl" />
 </div>
-<div>
-<FaInstagram />
+<div className="inline-block p-2 rounded-full 
+border border-white cursor-pointer">
+<FaInstagram className="text-2xl" />
 </div>
 {/*line */}
 
