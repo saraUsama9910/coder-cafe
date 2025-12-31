@@ -12,7 +12,7 @@ const bgImage={
         backgroundRepeat:"no-repeat"
 }
 const Hero = () => {
-    const {sidebar, setSidebar} = React.useState(false);
+    const [sidebar, setSidebar] = React.useState(false);
     return (
 <main style={bgImage}>
     <section className=" relative min-h-[800px] w-full">
@@ -168,7 +168,7 @@ className="absolute top-20 left-[200px] z-[1]">
         </div>
 
 {/*sidebar menu section*/}
-{sidebar &&(
+{sidebar && (
 
                     <div>
                         <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
