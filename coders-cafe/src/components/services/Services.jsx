@@ -85,6 +85,15 @@ gap-8'>
 <div 
  >
     <img src={service.image} alt=''/>
+    <div>
+        <h1>
+            {service.title}
+        </h1>
+        <h1>
+            {service.subtitle}
+        </h1>
+        </div>
+ 
     </div>
 
 ))}
