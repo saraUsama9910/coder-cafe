@@ -10,7 +10,7 @@ const WhereToBuy = () => {
         place-items-center
         '>
 {/* form section*/ }
-            <div>
+<div>
  
 <h1>
     Buy our Products From Anywhere
@@ -26,8 +26,7 @@ const WhereToBuy = () => {
             <div className='col-span-2'>
 <img src={worldMap} alt=''
 
-className='w-full
-sm:w-[500px]mx-auto'
+className='input-style w-full'
 />
             </div>
         </div>
