@@ -43,7 +43,7 @@ transition={{
     delay:0.2
 }}
 className='text-3xl font-bold text-Gray-600/200'>
-    Fresh and <span className='text-yellow-500'>
+    Fresh and <span className='text-orange-300'>
        Tasty Coffees
     </span>
 </motion.h1>
@@ -85,13 +85,13 @@ gap-8'>
 <div 
  >
     <img src={service.image} alt=''/>
-    <div>
-        <h1>
+    <div className='space-y-2'>
+        <h1 className='text-2xl font-bold text-orange-300/100'>
             {service.title}
         </h1>
-        <h1>
+        <p className='text-gray-600/200 '> 
             {service.subtitle}
-        </h1>
+        </p>
         </div>
  
     </div>
