@@ -1,5 +1,5 @@
 import React from 'react'
-import{motion} from "framer-motion"
+import{delay, motion} from "framer-motion"
 import Coffee1 from "../../assets/coffee/coffee1.png"
 import Coffee2 from "../../assets/coffee/coffee1.png"
 import Coffee3 from "../../assets/coffee/coffee3.png"
@@ -25,7 +25,31 @@ const servicesData=[
         title: "Cold Coffee",
         subtitle: "lorem ipsum dolor sit iAmethyst, consectuter adipiscing elit."
     },
-]
+];
+const cardVariants={
+    hidden:{opacity:0,y:20},
+    visible:{
+        opacity:1,
+        y:0,
+        transition:{
+            type:"spring",
+            stiffness:150,
+            damping:10,
+            ease:"easeInOut"
+        }
+    }
+};
+const contanierVariants={
+    hidden:{opacity:1},
+    visible:{
+        opacity:1,
+        transition:{
+            delay:0.6,
+            staggerChildren:0.4
+        }
+    }
+}
+
 const Services = () => {
   return (
     <div className="container my-16
@@ -82,9 +106,17 @@ gap-8'>
 
 {servicesData.map((service)=>
 (
-<div 
+<div  className='ftex-center
+  p-4
+  space-y-6
+'
  >
-    <img src={service.image} alt=''/>
+    <img src={service.image} alt=''
+    className='img-shadow2
+    max-w[200px] mx-auto
+    hover:scale-110
+    duration-300
+    cursor-pointer'/>
     <div className='space-y-2'>
         <h1 className='text-2xl font-bold text-orange-300/100'>
             {service.title}
