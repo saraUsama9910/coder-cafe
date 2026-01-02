@@ -11,12 +11,24 @@ const WhereToBuy = () => {
         '>
 {/* form section*/ }
             <div>
-
-
+ 
+<h1>
+    Buy our Products From Anywhere
+</h1>
+<div className='flex items-center gap-4'> 
+   <input type='text' placeholder='Name'
+   className='input-style w-full lg:w-[150px]'/> 
+   <input type='email' placeholder='Email'
+                          className='input-style w-full ' />
+</div>
             </div>
 {/* world map section */}
             <div className='col-span-2'>
-<img src={worldMap} alt=''/>
+<img src={worldMap} alt=''
+
+className='w-full
+sm:w-[500px]mx-auto'
+/>
             </div>
         </div>
     </div>
