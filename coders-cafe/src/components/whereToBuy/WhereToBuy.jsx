@@ -18,6 +18,9 @@ const WhereToBuy = () => {
 initial={{opacity:0,y:100}}
 whileInView={{opacity:1,y:0}}
 transition={{
+  type: "spring",
+  stiffness: 100,
+  damping: 10,
   delay:0.2
 }}
 className='
@@ -30,7 +33,11 @@ font-serif'>
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
               delay: 0.4
+
             }}
 
 className='flex items-center gap-4'> 
@@ -43,6 +50,9 @@ className='flex items-center gap-4'>
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
               delay: 0.6
             }}
           className='flex items-center gap-4'>
@@ -55,6 +65,9 @@ className='flex items-center gap-4'>
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
               delay: 0.8
             }}
           
@@ -72,7 +85,18 @@ className='flex items-center gap-4'>
             </div>
 {/* world map section */}
             <div className='col-span-2'>
-<img src={worldMap} alt=''
+
+<motion.img 
+initial={{opacity:0,scale:0.5}}
+whileInView={{opacity:1,scale:1}}
+transition={{
+  type:"spring",
+  stiffness:100,
+  damping:10,
+  delay:1,
+}}
+
+src={worldMap} alt=''
 
 className='input-style w-full'
 />
