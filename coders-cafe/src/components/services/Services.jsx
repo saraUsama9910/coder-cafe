@@ -98,7 +98,12 @@ dolorem fuga.
 
           {/* card section  */}
 
-          <div className='
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={contanierVariants}
+          viewport={{ amount:0.8}}
+          className='
 grid grid-cols-1
 sm:grid-cols-2
 md:grid-cols-3
@@ -106,7 +111,9 @@ gap-8'>
 
 {servicesData.map((service)=>
 (
-<div  className='ftex-center
+<motion.div 
+variants={cardVariants}
+className='text-center
   p-4
   space-y-6
 '
@@ -126,11 +133,11 @@ gap-8'>
         </p>
         </div>
  
-    </div>
+    </motion.div>
 
 ))}
 
-</div>
+</motion.div>
 
     </div>
   )
