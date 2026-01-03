@@ -1,7 +1,7 @@
 import React from "react";
 import BgImage from "../../assets/bg-slate.png";
 import BlackCoffee from "../../assets/black.png";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../navbar/Navbar";
 import {motion, scale} from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 console.log(BgImage);
@@ -124,6 +124,7 @@ className="absolute top-20 left-[200px] z-[1]">
 
 
 {/*third div section */}
+<div className="hidden lg:flex">
                         <motion.div 
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -163,6 +164,7 @@ className="absolute top-20 left-[200px] z-[1]">
                             </div>
                         </motion.div>
 <div></div>
+                    </div>
 
             </div>
         </div>
@@ -181,7 +183,7 @@ className="absolute top-20 left-[200px] z-[1]">
                     }}>
                         
                         <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
-to-orange-500/100 backdrop-blur-sm z-10">
+to-orange-500/100 backdrop-blur-sm z-50">
 
 
                             <div className="w-full h-full
