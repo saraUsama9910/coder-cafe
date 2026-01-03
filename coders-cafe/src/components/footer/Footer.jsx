@@ -63,7 +63,14 @@ const Footer = () => {
                                     </div>
                                 </motion.div>
                                 {/* footer links section */}
-                                <div className='space-y-6'>
+                                <motion.div
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}  
+
+                                
+                                className='space-y-6'>
                                     <h1 className='text-3xl
                                                     font-bold
                                                     '>
@@ -102,9 +109,17 @@ const Footer = () => {
                           </div>
                                     </div>
 
-                                </div>
+                                </motion.div>
                                 {/* social links section */}
-                                <div className='space-y-6'>
+                                <motion.div
+                                
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{ duration: 0.6, delay: 0.6 }}  
+
+                                
+                                className='space-y-6'>
                                     <h1 className='text-3xl
                                                     font-bold
                                                     '>
@@ -151,7 +166,7 @@ const Footer = () => {
                                     <div>
                                     </div>
 
-                                </div>
+                                </motion.div>
 
             </div>
             {/*copyright section */}
