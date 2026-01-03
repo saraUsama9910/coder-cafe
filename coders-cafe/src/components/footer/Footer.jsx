@@ -6,7 +6,7 @@ import {
     FaPhone,
     FaTelegram
 } from 'react-icons/fa'
-import {FaMapLocationDot} from 'react-icons/fa6'
+import {FaMapLocation, FaMapLocationDot} from 'react-icons/fa6'
 import CreditCards from '../../assets/website/credit-cards.webp'
 import {motion} from 'framer-motion'
 
@@ -24,6 +24,36 @@ const Footer = () => {
                                     gap-8 '>
 
                                 {/* company details section */}
+                                <div className='space-y-6'>
+                                    <h1 className='text-3xl
+                                                    font-bold
+                                                    uppercase'>
+                                        Coders Cafe
+                                    </h1>
+                                    <p className='
+                                                    text-sm
+                                                    max-w-[300px]
+                                                    '>
+                                        Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit. 
+                                        Quisquam, quod.
+                                        ratione quidem libero,praesentium ab atque?
+                                        Quidem maxime,
+                                        numquam dolores.
+                                    </p>
+                                    <div>
+                                        <p>
+                                            <FaPhone />
+                                           
+                                               +1 (123) 456-7890
+                                        </p>
+                                        <p className='flex items-center gap-2'>
+                                            {" "}
+                                            <FaMapLocation/>
+                                                    Noida,Uttar Pradesh                                        
+                                        </p>
+                                    </div>
+                                </div>
                                 {/* footer links section */}
                                 {/* social links section */}
 
