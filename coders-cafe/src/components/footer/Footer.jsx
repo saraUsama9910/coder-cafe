@@ -170,7 +170,14 @@ const Footer = () => {
 
             </div>
             {/*copyright section */}
-            <p className='
+            <motion.p 
+            
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.6, delay: 0.8}}  
+
+            className='
             text-white
             pt-8
             mt-8
@@ -180,7 +187,7 @@ const Footer = () => {
                         '> 
                 © Copyright &copy; 2026 Eng Sara. All 
                 rights reserved.
-            </p>
+            </motion.p>
         </div>
     </div>
   )
