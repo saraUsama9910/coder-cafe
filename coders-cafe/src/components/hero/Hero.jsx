@@ -30,12 +30,12 @@ const Hero = () => {
     <div className="text-orange-200/100 mt-[100px]"> 
    < motion.h1 
    initial={{opacity: 0,y: -100}} 
-   animate={{opacity: 1,y: 0}}
+   whileInView={{opacity: 1,y: 0}}
    transition={{
     type: 'spring',
     stiffness: 100,
     damping: 10,
-    delay: 1,
+    delay: 0.1,
    }}
    className="text-7xl font-bold leading-tight ml-14
    md:mt-0 p-4 space-y-28">
@@ -43,12 +43,12 @@ const Hero = () => {
    </motion.h1>
    <motion.div 
     initial={{ opacity: 0, y: 100 }}
-    animate={{ opacity: 1, y: 0 }}
+                                whileInView={{ opacity: 1, y: 0 }}
     transition={{
         type: 'spring',
         stiffness: 100,
         damping: 10,
-        delay: 1.2,
+        delay: 0.2,
     }}
    
    className="relative mt-10"> 
@@ -77,12 +77,12 @@ const Hero = () => {
 <div  className="relative">
     <motion.img 
         initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1,scale: 1 }}
+                                whileInView={{ opacity: 1,scale: 1 }}
         transition={{
             type: 'spring',
             stiffness: 100,
             damping: 10,
-            delay: .4,
+            delay: 0.2,
         }}
 
     
@@ -91,12 +91,12 @@ const Hero = () => {
                             {/* orange circle ring */}
                             <motion.div
                                 initial={{ opacity: 0, y: 100 }}
-                                animate={{ opacity: 1, y: 0 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 100,
                                     damping: 10,
-                                    delay: 1.2,
+                                    delay: 0.2,
                                 }}
                                 className="h-[180px] w-[180px] absolute top-24 -right-16 
   border-orange-300/90 rounded-full z-20 border-[20px]"
@@ -104,12 +104,12 @@ const Hero = () => {
 
 <motion.div 
                                 initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 100,
                                     damping: 10,
-                                    delay: .8,
+                                    delay: .3,
                                 }}
 
 
@@ -126,12 +126,12 @@ className="absolute top-20 left-[200px] z-[1]">
 {/*third div section */}
                         <motion.div 
                             initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             transition={{
                                 type: 'spring',
                                 stiffness: 100,
                                 damping: 10,
-                                delay: 1.2,
+                                delay: 0.2,
                             }}
 
                         
@@ -177,7 +177,7 @@ className="absolute top-20 left-[200px] z-[1]">
                         type: 'spring',
                         stiffness: 100,
                         damping: 10,
-                        delay: 0,
+                        delay: 0.3,
                     }}>
                         
                         <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-orange-300/100
