@@ -35,12 +35,12 @@ const Footer = () => {
                                 className='space-y-6'>
                                     <h1 className='text-3xl
                                                     font-bold
-                                                    pl-8
+                                                    ml-8
                                                     uppercase'>
                                         Coders Cafe
                                     </h1>
                                     <p className='
-                                    pl-8
+                                    ml-8
                                                     text-sm
                                                     max-w-[300px]
                                                     '>
@@ -53,12 +53,12 @@ const Footer = () => {
                                     </p>
                                     <div>
                                         <p className='flex items-center gap-2
-                                        pl-8'>
+                                        ml-8'>
                                             <FaPhone />
                                            
                                                +1 (123) 456-7890
                                         </p>
-                          <p className='pl-8 flex items-center gap-2'>
+                          <p className='ml-8 flex items-center gap-2'>
                                             {" "}
                                             <FaMapLocation/>
                                                     Noida,Uttar Pradesh                                        

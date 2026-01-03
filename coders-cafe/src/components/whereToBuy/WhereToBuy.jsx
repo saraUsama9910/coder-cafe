@@ -12,7 +12,7 @@ const WhereToBuy = () => {
         place-items-center
         '>
 {/* form section*/ }
-<div className='space-y-8'>
+<div className='space-y-8 '>
  
 <motion.h1
 initial={{opacity:0,y:100}}
@@ -26,6 +26,7 @@ transition={{
 className='
 text-4xl font-bold
 text-darkGray
+ml-8
 font-serif'>
     Buy our Products From Anywhere
 </motion.h1>
@@ -40,9 +41,9 @@ font-serif'>
 
             }}
 
-className='flex items-center gap-4'> 
+            className='flex items-center gap-4 ml-8'> 
    <input type='text' placeholder='Name'
-              className='px-4 py-2 border-[1px] border-gray-400/100 rounded-md w-full lg:w-[150px]'/> 
+              className=' px-4 py-2 border-[1px] border-gray-400/100 rounded-md w-full lg:w-[150px]'/> 
    <input type='email' placeholder='Email'
               className='px-4 py-2 border-[1px] border-gray-400/100 rounded-md w-full ' />
 </motion.div>
@@ -55,7 +56,7 @@ className='flex items-center gap-4'>
               damping: 10,
               delay: 0.6
             }}
-          className='flex items-center gap-4'>
+            className='ml-8 flex items-center gap-4'>
             <input type='text' placeholder='Country'
               className='px-4 py-2 border-[1px] border-gray-400/100 rounded-md w-full lg:w-[150px]' />
             <input type='email' placeholder='Zipcode'
@@ -79,6 +80,8 @@ className='flex items-center gap-4'>
         hover:bg-orange-300/100 
         duration-200
         w-full
+        ml-4
+
           '>
             Order Now
           </motion.button>

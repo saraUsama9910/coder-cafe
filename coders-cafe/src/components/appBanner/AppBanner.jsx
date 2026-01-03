@@ -25,7 +25,8 @@ const AppBanner = () => {
         sm:flex
         sm:justify-end
         sm:items-center 
-        rounded-xl'
+        rounded-xl
+        ml-8'
         >
 
       
