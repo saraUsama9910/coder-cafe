@@ -129,6 +129,18 @@ const Footer = () => {
                                                         '/>
                                     </div>
                                     <div>
+                                        <h1 className='text-xl
+                                                    font-semibold
+                                                    '>
+                                            Payment Methods
+
+                                        </h1>
+                                        <img src={CreditCards} alt="credit-cards" 
+                                        className='
+                                                        w-[80%]
+                                                        '/>
+                                    </div>
+                                    <div>
                                     </div>
 
                                 </div>
