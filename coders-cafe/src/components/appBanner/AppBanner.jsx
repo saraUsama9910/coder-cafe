@@ -104,7 +104,7 @@ max-w-xl mx-auto'>
                 type: "spring",
                 stiffness: 100,
                 damping: 10,
-                delay: 0.4,
+                delay: 0.5,
             }}
 
             
