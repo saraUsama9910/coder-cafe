@@ -42,7 +42,7 @@ const Footer = () => {
                                         numquam dolores.
                                     </p>
                                     <div>
-                                        <p>
+                                        <p className='flex items-center gap-2'>
                                             <FaPhone />
                                            
                                                +1 (123) 456-7890
@@ -55,7 +55,83 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 {/* footer links section */}
+                                <div className='space-y-6'>
+                                    <h1 className='text-3xl
+                                                    font-bold
+                                                    '>
+                                        Quick Links
+                                    </h1>
+                                    <div className='
+                                    grid grid-cols-2
+                                    gap-3'>
+                                    {/* first colunm section */}
+                                    <div>
+                                        <ul className='
+                                                        space-y-2
+                                                        text-sm
+                                                        '>
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Services</li>
+                                            <li>Products</li>
+                                            <li>Contact Us</li>
+                                            <li>Privacy Policy</li>
+                                        </ul>
+                                    </div>
+                                    {/* second colunm section */}
+                          <div>
+                              <ul className='
+                                                        space-y-2
+                                                        text-sm
+                                                        '>
+                                  <li>Home</li>
+                                  <li>About Us</li>
+                                  <li>Services</li>
+                                  <li>Products</li>
+                                  <li>Contact Us</li>
+                                  <li>Privacy Policy</li>
+                              </ul>
+                          </div>
+                                    </div>
+
+                                </div>
                                 {/* social links section */}
+                                <div className='space-y-6'>
+                                    <h1 className='text-3xl
+                                                    font-bold
+                                                    '>
+                                        Follow Us
+
+                                    </h1>
+                                    <div className='flex 
+                                                    items-center 
+                                                    gap-3
+                                                    '>
+                                        <FaFacebook className='
+                                                        text-3xl
+                                                        hover:scale-105
+                                                        duration-300
+                                                        '/>
+                                        <FaInstagram className='
+                                                        text-3xl
+                                                        hover:scale-105
+                                                        duration-300
+                                                        '/>
+                                        <FaGoogle className='
+                                                        text-3xl
+                                                        hover:scale-105
+                                                        duration-300
+                                                        '/>
+                                        <FaTelegram className='
+                                                        text-3xl
+                                                        hover:scale-105
+                                                        duration-300
+                                                        '/>
+                                    </div>
+                                    <div>
+                                    </div>
+
+                                </div>
 
             </div>
         </div>
