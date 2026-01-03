@@ -146,6 +146,18 @@ const Footer = () => {
                                 </div>
 
             </div>
+            {/*copyright section */}
+            <p className='
+            text-white
+            pt-8
+            mt-8
+            border-t-2
+             text-center
+                        
+                        '> 
+                © Copyright &copy; 2026 Eng Sara. All 
+                rights reserved.
+            </p>
         </div>
     </div>
   )
