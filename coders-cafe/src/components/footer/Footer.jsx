@@ -24,7 +24,15 @@ const Footer = () => {
                                     gap-8 '>
 
                                 {/* company details section */}
-                                <div className='space-y-6'>
+                                <motion.div 
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true , amount: 0.5 }}
+                                transition={{ duration: 0.6, delay: 0.2 }}  
+
+                                
+                                
+                                className='space-y-6'>
                                     <h1 className='text-3xl
                                                     font-bold
                                                     uppercase'>
@@ -53,7 +61,7 @@ const Footer = () => {
                                                     Noida,Uttar Pradesh                                        
                                         </p>
                                     </div>
-                                </div>
+                                </motion.div>
                                 {/* footer links section */}
                                 <div className='space-y-6'>
                                     <h1 className='text-3xl
