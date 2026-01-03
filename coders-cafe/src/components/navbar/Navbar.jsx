@@ -4,7 +4,7 @@ import{ motion } from 'framer-motion'
 const Navbar = ({sidebar,setSidebar}) => {
   return (
     <nav className='absolute top-0 left-0 w-full pt-10
-    text-white z-40'>
+    text-white z-[9990]'>
         <div className='container '>
 <div>
     <div className='flex justify-between items-center'>
@@ -19,7 +19,7 @@ const Navbar = ({sidebar,setSidebar}) => {
         type: "spring",
         stiffness: 100,
         damping: 10,
-        delay: .2,
+        delay: 0.2,
     }}
 
     
